@@ -28,7 +28,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "nim": "240101088",
+  "npm": "240101088",
   "nama": "Rizky Ramadhan",
   "program_studi": "Teknik Informatika",
   "angkatan": 2024,
@@ -38,21 +38,22 @@ Accept: application/json
 ###
 
 ### 5. PUT Perbarui Data Mahasiswa Berdasarkan ID
-PUT http://localhost:8000/api/mahasiswa.php?id=1
+### (ganti id=4 dengan id hasil POST di request 4)
+PUT http://localhost:8000/api/mahasiswa.php?id=4
 Content-Type: application/json
 Accept: application/json
 
 {
-  "nim": "230101001",
-  "nama": "Ahmad Fauzi, S.Kom.",
+  "npm": "240101088",
+  "nama": "Rizky Ramadhan, S.Kom.",
   "program_studi": "Teknik Informatika",
-  "angkatan": 2023,
-  "email": "ahmad.fauzi.update@example.com"
+  "angkatan": 2024,
+  "email": "rizky.ramadhan.update@example.com"
 }
 
 ###
 
 ### 6. DELETE Hapus Data Mahasiswa Berdasarkan ID
+### (ganti id=4 dengan id hasil POST di request 4)
 DELETE http://localhost:8000/api/mahasiswa.php?id=4
 Accept: application/json
-
