@@ -9,7 +9,7 @@ require_once __DIR__ . '/config/database.php';
 try {
     $db = new Database();
     $pdo = $db->getConnection();
-    echo "\n[SUKSES] Koneksi ke basis data MySQL (db_mahasiswa) berhasil terjalin!\n";
+    echo "\nKoneksi ke basis data MySQL berhasil!\n";
     
     // Periksa tabel
     $stmt = $pdo->query("SELECT COUNT(*) AS total FROM mahasiswa");
